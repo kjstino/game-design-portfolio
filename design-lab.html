@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0b1015" name="theme-color"/><meta content="dark" name="color-scheme"/>
+<meta content="게임기획 Design Lab. 사이비 마피아·뱀서류·버블·5라인 디펜스·정보전략 시뮬레이션에서 선정한 다섯 가지 시스템 설계와 문제 분석 사례." name="description"/>
+<title>Design Lab | KJS 게임 시스템 기획 포트폴리오</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/><link href="assets/site.css" rel="stylesheet"/><script defer="" src="assets/site.js"></script></head>
+<body class="theme-lab"><a class="skip-link" href="#main">본문 바로가기</a>
+<header class="site-header"><div class="wrap header-inner"><a aria-label="홈으로" class="brand" href="index.html"><span class="brand-mark">K</span><span class="brand-name">KJS. DESIGN<small>GAME SYSTEM PORTFOLIO</small></span></a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="메뉴 열기" class="menu-toggle" type="button">☰</button>
+<nav aria-label="주 메뉴" class="nav" id="main-nav"><a href="index.html#work">프로젝트</a><a href="projects/tower.html">타워 디펜스</a><a href="projects/masks.html">가면과 진실</a><a aria-current="page" href="design-lab.html">Design Lab</a><a href="about.html">ABOUT ME</a></nav></div></header>
+<main id="main"><section class="lab-hero"><div class="wrap lab-hero-grid"><div>
+<div class="kicker">SUPPLEMENTARY WORK / DESIGN LAB</div>
+<h1>프로젝트가 멈춰도,<br/><em>설계의 질문은 남습니다.</em></h1>
+<p>진행을 중단하거나 보류한 게임 다섯 개에서, <strong>게임 규칙의 의도·예외 처리·문제 분석</strong>만 골라 정리했습니다. 완성된 게임이나 검증된 개선 성과로 포장하지 않는 보조 포트폴리오입니다.</p>
+<div class="tag-row"><span class="pill accent">5개 선별 사례</span><span class="pill">설계 문서 / 실험 기록</span><span class="pill">실제 게임 화면과 구분</span></div>
+<div class="hero-actions" style="margin-top:26px"><a class="btn btn-primary" href="#cases">기획 사례 보기 ↘</a><a class="btn btn-quiet" href="index.html#work">대표작 돌아가기 ↗</a></div>
+</div><div aria-label="다섯 사례의 세 가지 설계 질문을 나타내는 추상 도식" class="lab-hero-art" role="img">
+<div class="lab-art-top">DESIGN QUESTIONS / 03 THEMES</div>
+<div class="lab-art-line"><span>PLAYER CHOICE</span><b>행동은 왜 의심받는가?</b><small>사회적 추리 · 정보 전략</small></div>
+<div class="lab-art-line"><span>RULE EXECUTION</span><b>언제 무엇을 처리하는가?</b><small>스킬 연계 · 무기 순환</small></div>
+<div class="lab-art-line"><span>BALANCE</span><b>플레이어는 대응할 수 있는가?</b><small>퍼즐 전투의 실패 분석</small></div>
+<div class="lab-art-bottom">CONCEPT DIAGRAM / NOT GAME SCREENSHOT</div>
+</div></div></section>
+<section class="lab-topics" id="cases"><div class="wrap"><div class="kicker">01 / INDEX</div><div class="section-head lab-index-head"><h2 class="section-heading">다섯 게임, 세 가지 주제</h2><p class="section-sub">과거 기획에서 증빙할 가치가 있는 부분만 선별했습니다. 아래 항목을 선택하면 상세 내용으로 이동합니다.</p></div>
+<div class="lab-index-grid">
+<a href="#cult"><span>01 · SYSTEM</span><b>사이비 교단 마피아 게임</b><small>정상 행동이 의심받는 경제 구조</small></a>
+<a href="#intel"><span>02 · INFORMATION</span><b>정보전략 시뮬레이션</b><small>불완전한 보고와 제한적 정보 확보</small></a>
+<a href="#five"><span>03 · COMBAT</span><b>5라인 디펜스</b><small>인접 스킬 연계의 판정 우선순위</small></a>
+<a href="#vampire"><span>04 · RULE SPEC</span><b>뱀서류 전투 게임</b><small>무기 강제 순환과 상태 스냅샷</small></a>
+<a href="#bubble"><span>05 · BALANCE</span><b>버블 전투 게임</b><small>대응 불가능한 구슬 배치 문제</small></a>
+</div></div></section>
+<div class="lab-split-shell"><div class="wrap lab-split"><aside aria-label="Design Lab 페이지 목차" class="lab-toc"><span>IN THIS PAGE</span><a href="#cult">01 · 시민 내분</a><a href="#intel">02 · 정보 전략</a><a href="#five">03 · 라인 연계</a><a href="#vampire">04 · 무기 판정</a><a href="#bubble">05 · 버블 밸런스</a><a href="#summary">정리 · 증빙 한계</a></aside><div class="lab-content">
+<section class="lab-case" id="cult"><div class="lab-case-top"><span class="lab-case-num">01</span><span class="lab-case-label">SOCIAL SYSTEM / 경제·정보 설계</span></div><h2>정상적인 행동을<br/>의심의 근거로 만드는 방법</h2>
+<p class="lab-lead">사이비 교단 마피아 게임은 시민이 자기 진영의 승리를 위해 활동자금을 모으지만, 그 정상적인 행동이 잠입 교인의 행동과 비슷하게 보이도록 설계했습니다.</p>
+<div class="lab-status"><b>상태</b><span>시스템 기획 · 시뮬레이션 및 프로토타입 작업 / 다인 실플레이 검증 미확인</span></div>
+<div aria-label="미션에서 오판으로 이어지는 시스템 흐름" class="lab-steps"><div>미션 수행<small>공동자금 +</small></div><i>→</i><div>활동자금 획득<small>능력 사용 준비</small></div><i>→</i><div>행동 목격<small>정체 불확실</small></div><i>→</i><div>강제 교화<small>오판 시 양측 탈락</small></div></div>
+<div class="lab-facts"><div><b>기획 의도</b><p>시민이 단순히 투표를 기다리는 수동적 진영이 아니라, 자금을 써서 직접 공격할 수 있게 합니다. 오판을 막는 것보다 합리적인 의심과 위험한 선택 사이의 긴장을 목표로 합니다.</p></div><div><b>핵심 규칙</b><p>시민 미션은 실제 공동 종교자금을 올리고, 잠입 미션은 빼앗습니다. 표시 금액은 자동 갱신되지 않아 직접 단말을 조회해야 합니다. 시민이 일반 시민에게 강제 교화를 사용하면 시전자와 대상 모두 탈락합니다.</p></div></div>
+<h3>실제 자금과 표시 자금이 달라지는 구조</h3>
+<div class="ledger" data-ledger=""><div class="panel-title">INTERACTIVE EXAMPLE / 포트폴리오용 규칙 설명</div><div class="ledger-row"><div class="ledger-box"><span>서버상의 실제 공동자금 변화 예시</span><b data-actual="">0만 원</b></div><div class="ledger-box"><span>마지막 단말 조회 기준 표시값</span><b data-shown="">0만 원</b></div></div><div class="ledger-actions"><button data-delta="1000" type="button">시민 미션 +1,000만</button><button data-delta="-500" type="button">잠입 미션 −500만</button><button data-sync="" type="button">단말 조회 갱신</button><button data-reset="" type="button">초기화</button></div><div aria-live="polite" class="ledger-message" data-log=""></div><p class="footnote">이 위젯은 게임 화면이 아닌 설명용 시연입니다. 실제 규칙에는 단말 갱신 제한이 있으며, 시민에게 실제 값이 상시 공개되는 것은 아닙니다.</p></div>
+<div class="lab-conclusion"><b>검증 필요</b><p>가상 에이전트 시뮬레이션에서 나타난 오판·목격·승률이 실제 사람의 심리전에서도 재현되는지는 확인되지 않았습니다. 한 번의 행동만으로 잠입 여부가 확정되지 않도록 설계한 의도를 실제 플레이로 시험해야 합니다.</p></div>
+</section>
+<section class="lab-case" id="intel"><div class="lab-case-top"><span class="lab-case-num">02</span><span class="lab-case-label">INFORMATION DESIGN / 전략·간접 지휘</span></div><h2>플레이어가 아는 정보와<br/>실제 전장을 분리하기</h2>
+<p class="lab-lead">정보전략 시뮬레이션에서는 플레이어가 모든 부대를 직접 조작하는 대신, 간부의 보고를 받아 판단하고 명령을 전달하는 간접 지휘 구조를 검토했습니다.</p>
+<div class="lab-status"><b>상태</b><span>과거 시스템 구상 · 상세 원본 및 구현 검증 자료 미확인 / 컨셉 수준으로 소개</span></div>
+<div aria-label="전장과 지휘관의 정보가 다른 개념도" class="lab-info-diagram"><div class="lab-info-field"><span>실제 전장</span><div class="lab-info-tokens"><i>?</i><i>!</i><i>?</i><i>✓</i></div><small>위치 · 위협 · 변화 · 숨겨진 상황</small></div><div class="lab-info-channel"><b>보고</b><small>지연 / 누락 / 왜곡 가능성</small><span>↓</span></div><div class="lab-info-field command"><span>플레이어의 상황 인식</span><div class="lab-info-tokens"><i>?</i><i>?</i><i>—</i><i>✓</i></div><small>불완전한 정보로 명령 결정</small></div></div>
+<div class="lab-facts"><div><b>기획 의도</b><p>불확실한 정보를 해석하는 것이 전략적 선택이 되도록, 전장의 사실과 지휘관의 인식 사이에 간극을 둡니다.</p></div><div><b>검토한 요소</b><p>위험 지역의 보고를 무시하거나 전달하지 않는 간부, 개인 생존을 위한 전향 가능성, 비용을 감수하고 특정 정보의 불확실성을 줄이는 ‘봉인해제’ 수단 등을 논의했습니다.</p></div></div>
+<div class="lab-conclusion"><b>자료 상태</b><p>이 페이지는 과거 대화에서 검토한 시스템 방향만 소개합니다. 간부 행동 확률, 봉인해제 비용, 전향 조건 등이 확정·구현됐다고 주장하지 않으며, 상세 수치·판정은 원본 기획서 대조 전까지 공개하지 않습니다.</p></div>
+</section>
+<section class="lab-case" id="five"><div class="lab-case-top"><span class="lab-case-num">03</span><span class="lab-case-label">SKILL LOGIC / 연계 판정</span></div><h2>5개 라인의 자동 전투,<br/>인접 스킬을 하나의 결과로</h2>
+<p class="lab-lead">각 라인에 배치된 캐릭터가 자동 공격하고, 이웃한 라인의 스킬 상태가 조건을 만족하면 연계 공격을 실행하는 구조를 기획했습니다.</p>
+<div class="lab-status"><b>상태</b><span>과거 전투·스킬 규칙 설계 / 실제 게임 구현 및 플레이 테스트 미확인</span></div>
+<div aria-label="5개 라인의 인접 연계 조건 개념도" class="lane-demo"><div><span>LINE 01</span><b>자동 전투</b></div><div class="active"><span>LINE 02</span><b>활성 스킬 A</b></div><div class="active"><span>LINE 03</span><b>활성 스킬 B</b></div><div><span>LINE 04</span><b>자동 전투</b></div><div><span>LINE 05</span><b>자동 전투</b></div></div>
+<p class="lab-diagram-caption">라인 2·3을 강조한 연계 판정의 설명용 도식. 실제 게임 스크린샷이나 확정 캐릭터 조합이 아닙니다.</p>
+<div class="lab-rule-flow"><b>기본 스킬 활성</b><span>→</span><b>인접 조건 확인</b><span>→</span><b>재료 스킬 소모</b><span>→</span><b>연계 스킬 생성</b></div>
+<div class="lab-facts"><div><b>기획 의도</b><p>개별 캐릭터의 성능만 강화하는 것이 아니라, 인접 배치와 스킬이 맞물리는 순간을 전략으로 만들고자 했습니다.</p></div><div><b>예외·우선순위</b><p>연계에 사용된 하위 스킬은 소모되고, 연계 결과는 새로운 지속시간을 갖습니다. 생성된 연계 스킬도 더 높은 단계의 재료가 될 수 있으며, 상위 연계가 성립하면 하위 연계를 대체하고 최종 공격만 실행하도록 정했습니다.</p></div></div>
+<div class="lab-conclusion"><b>검증 필요</b><p>연계의 발생 빈도, 스킬 가독성, 특정 캐릭터 조합의 과도한 효율은 실제 플레이 데이터로 검증하지 않았습니다. 시스템 설계와 판정 순서의 사례로 사용합니다.</p></div>
+</section>
+<section class="lab-case" id="vampire"><div class="lab-case-top"><span class="lab-case-num">04</span><span class="lab-case-label">COMBAT RULE SPEC / 스냅샷·예외 처리</span></div><h2>공격이 시작된 뒤<br/>능력치가 바뀐다면?</h2>
+<p class="lab-lead">뱀서류 전투 기획에서는 최대 세 무기를 순환 사용하면서, 공격과 스킬의 판정 시점을 구체적으로 정의했습니다. 모호한 구현 순서가 결과를 바꾸지 않도록 하는 것이 목적이었습니다.</p>
+<div class="lab-status"><b>상태</b><span>시스템 상세 기획서 존재 / 실제 게임 구현·플레이 검증 자료 없음</span></div>
+<div aria-label="무기 강제 순환과 스킬 능력치 고정 예시" class="weapon-cycle"><div class="weapon-row"><div><small>무기 슬롯 01</small><b>A</b></div><span>→</span><div><small>무기 슬롯 02</small><b>B</b></div><span>→</span><div><small>무기 슬롯 03</small><b>C</b></div><span>↺</span></div><div class="snapshot"><div><small>스킬 발동 시 무기 공격력</small><strong>100</strong></div><span>스킬 실행 중 업그레이드 →</span><div><small>이후 새 공격의 공격력</small><strong>120</strong></div></div><p>이미 발동한 스킬은 저장된 <b>100</b>을 끝까지 사용. 다음 공격부터 <b>120</b>을 적용.</p></div>
+<div class="lab-facts"><div><b>무기 교체 규칙</b><p>현재 무기의 마지막 탄창을 소비해도 즉시 교체하지 않습니다. 그 마지막 공격이 종료된 시점에 다음 무기로 넘어가도록 순서를 고정했습니다.</p></div><div><b>스킬 상태 보존</b><p>스킬 발동 시점의 무기 능력치를 저장합니다. 발동 후 무기를 바꾸거나 업그레이드해도 이미 실행 중인 스킬의 기준값은 변하지 않습니다.</p></div></div>
+<div class="lab-conclusion"><b>기획 자료의 범위</b><p>무기·성장 시스템 기획서에 상세 처리 순서가 기록되어 있습니다. 다만 이를 구현 후 재현 테스트까지 완료한 성과라고 표현하지 않습니다.</p></div>
+</section>
+<section class="lab-case" id="bubble"><div class="lab-case-top"><span class="lab-case-num">05</span><span class="lab-case-label">BALANCE PROBLEM / 대응 가능성</span></div><h2>난이도가 높은 것과<br/>대응이 불가능한 것은 다릅니다.</h2>
+<p class="lab-lead">버블 기반 전투를 기획하면서, 서로 다른 색의 구슬이 소량씩 남는 배치 때문에 공격예고를 막을 수도, 몬스터를 처치할 수도 없는 상황이 반복된다는 문제를 발견했습니다.</p>
+<div class="lab-status"><b>상태</b><span>규칙·몬스터 보드 데이터 존재 / 수정 후 플레이 결과는 미확인</span></div>
+<div aria-label="색깔별 구슬이 분리되어 남는 문제 상황 개념도" class="bubble-diagram"><div class="bubble-grid">
+<span class="bubble fire"></span><span class="bubble water"></span><span class="bubble air"></span><span class="bubble fire"></span><span class="bubble water"></span><span class="bubble air"></span><span class="bubble water"></span><span class="bubble fire"></span><span class="bubble air"></span><span class="bubble air"></span><span class="bubble water"></span><span class="bubble fire"></span><span class="bubble water"></span><span class="bubble air"></span><span class="bubble fire"></span>
+</div><div class="bubble-observe"><b>발사 가능한 색 ≠ 필요한 색</b><span>남은 보드를 지울 수 없음</span><span>공격예고를 상쇄하지 못함</span><span>턴 경과로 피해 누적</span></div></div><p class="lab-diagram-caption">실제 특정 스테이지 배치가 아닌, 발견한 문제를 단순화한 설명용 도식입니다.</p>
+<div class="lab-facts"><div><b>문제 정의</b><p>플레이어가 조준을 잘못해서가 아니라, 유효한 선택지가 부족한 상태에서 피해를 강제로 받는 경우가 많았습니다. 플레이어의 판단과 결과의 연결이 약해지는 문제가 있었습니다.</p></div><div><b>검토한 개선 방향</b><p>몬스터 HP만 낮추는 대신 공격예고와 구슬 배치, 고립 낙하 가능성, 공격력을 함께 재검토했습니다. 실제 효과는 수정 전후 결과가 없어 결론 내리지 않았습니다.</p></div></div>
+<div class="lab-conclusion"><b>기획상 교훈</b><p>실패가 자주 발생한다는 수치만으로 난이도를 평가하지 않고, 플레이어에게 불리한 상황을 바꿀 합리적인 선택지가 있었는지를 확인해야 합니다.</p></div>
+</section>
+<section class="lab-summary" id="summary"><div class="kicker">02 / HOW TO READ</div><h2>다섯 개를 완성작으로 주장하지 않습니다.</h2><p>이 페이지의 목적은 개별 게임의 출시·완주 성과가 아니라 <strong>문제 정의, 구현 가능한 명세, 기획 근거</strong>를 보여주는 것입니다. 실제 동작과 플레이 검증은 대표작 두 프로젝트의 자료로 별도 증빙합니다.</p><div class="lab-summary-grid"><div><strong>행동·정보</strong><span>마피아 / 정보전략</span></div><div><strong>판정·연계</strong><span>5라인 / 뱀서류</span></div><div><strong>난이도 분석</strong><span>버블</span></div></div><a class="btn btn-primary" href="index.html#work">대표 프로젝트 보기 ↗</a></section>
+</div></div></div></main>
+<footer class="site-footer"><div class="wrap footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">K</span><span class="brand-name">KJS. DESIGN<small>GAME SYSTEM PORTFOLIO</small></span></a><p class="footer-note" style="margin-top:14px">설계 사례 모음 / 보류·중단 프로젝트는 실제 구현 결과와 구분</p></div><div class="footer-links"><a href="index.html#work">PROJECTS</a><a href="design-lab.html">DESIGN LAB</a><a href="about.html">ABOUT ME</a></div></div></footer>
+</body></html>
